@@ -4,8 +4,8 @@ import java.awt.Color;
  * Class BallDemo - a short demonstration showing animation with the 
  * Canvas class. 
  *
- *@author Jordan Bailey
- *@version 2015.March
+ * @author Jordan Bailey
+ * @version 2015.March
  *
  * @author Michael Kölling and David J. Barnes
  * @version 2011.07.31
