@@ -7,8 +7,8 @@ import java.awt.Color;
  * @author Jordan Bailey
  * @version 2015.March
  *
- * @author Michael Kölling and David J. Barnes
- * @version 2011.07.31
+ * @author Jordan Bailey
+ * @version 2015.March
  */
 
 public class BallDemo   
@@ -22,35 +22,32 @@ public class BallDemo
     {
         myCanvas = new Canvas("Ball Demo", 600, 500);
     }
-
+  
     /**
-     * Simulate two bouncing balls
+     * Simulate the bouncing balls
      */
     public void bounce()
     {
-        int ground = 400;   // position of the ground line
-
-        myCanvas.setVisible(true);
-
-        // draw the ground
-        myCanvas.drawLine(50, ground, 550, ground);
-
         // crate and show the balls
-        BouncingBall ball = new BouncingBall(50, 50, 16, Color.BLUE, ground, myCanvas);
+        BoxBall ball = new BoxBall(50, 50, 16, Color.BLUE, ground, myCanvas);
         ball.draw();
-        BouncingBall ball2 = new BouncingBall(70, 80, 20, Color.RED, ground, myCanvas);
+        BoxBall ball2 = new BoxBall(70, 80, 20, Color.RED, ground, myCanvas);
         ball2.draw();
-
-        // make them bounce
-        boolean finished =  false;
-        while(!finished) {
-            myCanvas.wait(50);           // small delay
-            ball.move();
-            ball2.move();
-            // stop once ball has travelled a certain distance on x axis
-            if(ball.getXPosition() >= 550 || ball2.getXPosition() >= 550) {
-                finished = true;
-            }
-        }
+        BoxBall ball3 = new BoxBall(70, 80, 20, Color.RED, ground, myCanvas);
+        ball2.draw();
+        BoxBall ball4 = new BoxBall(70, 80, 20, Color.RED, ground, myCanvas);
+        ball2.draw();
+        BoxBall ball5 = new BoxBall(70, 80, 20, Color.RED, ground, myCanvas);
+        ball2.draw();
+        BoxBall ball6 = new BoxBall(70, 80, 20, Color.RED, ground, myCanvas);
+        ball2.draw();        
+        BoxBall ball7 = new BoxBall(70, 80, 20, Color.RED, ground, myCanvas);
+        ball2.draw();
+        BoxBall ball8 = new BoxBall(70, 80, 20, Color.RED, ground, myCanvas);
+        ball2.draw();
+        BoxBall ball9 = new BoxBall(70, 80, 20, Color.RED, ground, myCanvas);
+        ball2.draw();
+        BoxBall ball10 = new BoxBall(70, 80, 20, Color.RED, ground, myCanvas);
+        ball2.draw();
     }
 }
